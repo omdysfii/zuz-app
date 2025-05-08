@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const Database = require('better-sqlite3');
+const sqlite3 = require('sqlite3').verbose();
 const db = new Database('zuz.db');
 const app = express();
 const PORT = 3000;
